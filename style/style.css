@@ -2,8 +2,15 @@
 
 *{
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
+
 .wrapper{
     width: 90%;
     margin: 0 auto;
+}
+.active{
+    background-color: #15803D;
+    color: white;
+    box-shadow: 0px 0px 1px lightgray;
 }
