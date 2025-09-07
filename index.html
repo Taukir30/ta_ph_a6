@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +12,215 @@
     <!-- tailwindcss CDN-- -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- fontawsome CDN-- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- custom CSS-- -->
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
-    
+
+<body class="bg-[#F0FDF4]">
+    <!-- topbar------- -->
+    <header class="bg-[#15803D]">
+        <div class="wrapper navbar bg-[#15803D] ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <a class="hover:cursor-pointer text-xl text-white font-normal" href="#">Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-white">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="btn bg-[#FACC15] hover:bg-[#faae15] border-none rounded-3xl font-normal text-[#15803D] shadow-none h-9">Plant
+                    a Tree</a>
+            </div>
+        </div>
+    </header>
+    <!--/end topbar------- -->
+
+    <!-- banner start-- -->
+    <section class="bg-[#CFF0DC] w-full pt-2">
+        <div class="flex justify-between w-full">
+            <img src="./assets/hero-leaf1.png" alt="" class="w-1/4">
+            <div class="w-3/4 flex flex-col items-center justify-center">
+                <div class="center w-full flex flex-col items-center gap-4 py-8">
+                    <h1 class="font-bold text-center w-3/4 md:w-full text-xl lg:text-4xl text-[#1F2937] tracking-wide">
+                        Plant a Tree, Grow a Future</h1>
+                    <p class="text-xs text-center text-gray-600 w-3/4">Join our mission to plant 1 million trees and
+                        make the Earth greener for future generations.</p>
+                    <a
+                        class="btn bg-[#FACC15] hover:bg-[#faae15] border-none rounded-3xl font-normal text-[#15803D] shadow-none h-9">Get
+                        Involved</a>
+                </div>
+            </div>
+            <img src="./assets/hero-leaf2.png" alt="" class="w-1/4">
+        </div>
+    </section>
+    <!-- /banner end-- -->
+
+    <!-- main section start-- -->
+    <section class="py-10 my-5">
+        <h2 class="text-center font-semibold text-2xl mb-5">Choose Your Trees</h2>
+        <div class="wrapper grid grid-cols-6 gap-5">
+
+            <!-- left side categories -->
+            <div class="categories col-span-1">
+                <h2 class="">Categories</h2>
+                <ul class="menu bg-base-200 rounded-box w-full bg-[#F0FDF4] p-0">
+                    <li><a class="hover:bg-[#CFF0DC]">Item 1</a></li>
+                    <li><a class="hover:bg-[#CFF0DC]">Item 2</a></li>
+                    <li><a class="hover:bg-[#CFF0DC]">Item 3</a></li>
+                </ul>
+            </div>
+
+            <!-- middle card holder  -->
+            <div class="card_holder col-span-4 grid grid-cols-3 gap-5">
+
+                <div class="card bg-base-100  shadow-sm p-2 h-fit">
+                    <figure class="rounded-md mb-2">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-0 flex-grow-0">
+                        <h2 class="card-title text-sm">Mango Tree</h2>
+                        <p class="text-[9px] tracking-tight text-gray-600 flex-grow-0">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green </p>
+                        <div class="cat_price flex justify-between">
+                            <div class="badge badge-soft bg-[#DCFCE7] border-none text-green-600 text-xs font-semibold rounded-xl">Fruit Tree</div><div class="badge badge-ghost text-xs font-semibold">৳<span>500</span></div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn w-full rounded-3xl bg-[#15803D] text-white font-normal text-xs h-8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100  shadow-sm p-2 h-fit">
+                    <figure class="rounded-md mb-2">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-0 flex-grow-0">
+                        <h2 class="card-title text-sm">Mango Tree</h2>
+                        <p class="text-[9px] tracking-tight text-gray-600 flex-grow-0">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green </p>
+                        <div class="cat_price flex justify-between">
+                            <div class="badge badge-soft bg-[#DCFCE7] border-none text-green-600 text-xs font-semibold rounded-xl">Fruit Tree</div><div class="badge badge-ghost text-xs font-semibold">৳<span>500</span></div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn w-full rounded-3xl bg-[#15803D] text-white font-normal text-xs h-8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100  shadow-sm p-2 h-fit">
+                    <figure class="rounded-md mb-2">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-0 flex-grow-0">
+                        <h2 class="card-title text-sm">Mango Tree</h2>
+                        <p class="text-[9px] tracking-tight text-gray-600 flex-grow-0">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green </p>
+                        <div class="cat_price flex justify-between">
+                            <div class="badge badge-soft bg-[#DCFCE7] border-none text-green-600 text-xs font-semibold rounded-xl">Fruit Tree</div><div class="badge badge-ghost text-xs font-semibold">৳<span>500</span></div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn w-full rounded-3xl bg-[#15803D] text-white font-normal text-xs h-8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100  shadow-sm p-2 h-fit">
+                    <figure class="rounded-md mb-2">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-0 flex-grow-0">
+                        <h2 class="card-title text-sm">Mango Tree</h2>
+                        <p class="text-[9px] tracking-tight text-gray-600 flex-grow-0">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green </p>
+                        <div class="cat_price flex justify-between">
+                            <div class="badge badge-soft bg-[#DCFCE7] border-none text-green-600 text-xs font-semibold rounded-xl">Fruit Tree</div><div class="badge badge-ghost text-xs font-semibold">৳<span>500</span></div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn w-full rounded-3xl bg-[#15803D] text-white font-normal text-xs h-8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100  shadow-sm p-2 h-fit">
+                    <figure class="rounded-md mb-2">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-0 flex-grow-0">
+                        <h2 class="card-title text-sm">Mango Tree</h2>
+                        <p class="text-[9px] tracking-tight text-gray-600 flex-grow-0">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green </p>
+                        <div class="cat_price flex justify-between">
+                            <div class="badge badge-soft bg-[#DCFCE7] border-none text-green-600 text-xs font-semibold rounded-xl">Fruit Tree</div><div class="badge badge-ghost text-xs font-semibold">৳<span>500</span></div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn w-full rounded-3xl bg-[#15803D] text-white font-normal text-xs h-8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100  shadow-sm p-2 h-fit">
+                    <figure class="rounded-md mb-2">
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body p-0 flex-grow-0">
+                        <h2 class="card-title text-sm">Mango Tree</h2>
+                        <p class="text-[9px] tracking-tight text-gray-600 flex-grow-0">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green </p>
+                        <div class="cat_price flex justify-between">
+                            <div class="badge badge-soft bg-[#DCFCE7] border-none text-green-600 text-xs font-semibold rounded-xl">Fruit Tree</div><div class="badge badge-ghost text-xs font-semibold">৳<span>500</span></div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn w-full rounded-3xl bg-[#15803D] text-white font-normal text-xs h-8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- right side cart  -->
+            <div class="cart col-span-1 bg-white">
+                <h2>Your Cart</h2>
+                <div class="item_holder">
+                    <div class="item">
+                        <div class="item_body">
+                            <h2>Mango Tree</h2>
+                            <p>৳<span>500</span> x <span>1</span></p>
+                        </div>
+                        <button>x</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- main section end-- -->
 
 
     <script src="./js/index.js"></script>
 </body>
+
 </html>
