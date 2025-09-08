@@ -86,21 +86,16 @@
             <!-- left side categories -->
             <div class="categories col-span-1">
                 <h2 class="font-bold mb-2">Categories</h2>
-                <ul class="menu bg-base-200 rounded-box w-full bg-[#F0FDF4] p-0">
-                    <li><a class="hover:bg-[#CFF0DC] active text-sm">All Trees</a></li>
-                    <li><a class="hover:bg-[#CFF0DC] text-sm">Item 2</a></li>
-                    <li><a class="hover:bg-[#CFF0DC] text-sm">Item 2</a></li>
-                    <li><a class="hover:bg-[#CFF0DC] text-sm">Item 2</a></li>
-                    <li><a class="hover:bg-[#CFF0DC] text-sm">Item 2</a></li>
-                    <li><a class="hover:bg-[#CFF0DC] text-sm">Item 2</a></li>
+                <ul id="category_menu" class="menu bg-base-200 rounded-box w-full bg-[#F0FDF4] p-0">
+                    <li><a onclick="loadAllPlants()" id="cat_btn0" class="cat_btn hover:bg-[#CFF0DC] text-sm">All Trees</a></li>
 
                 </ul>
             </div>
 
             <!-- middle card holder  -->
-            <div class="card_holder col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div id="card_holder" class="card_holder col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-                <div class="card bg-base-100  shadow-sm p-2 h-75">
+                <!-- <div class="card bg-base-100  shadow-sm p-2 h-75">
                     <figure class="rounded-md mb-2">
                         <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                             alt="Shoes" />
@@ -230,12 +225,12 @@
                                 to Cart</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
             <!-- right side cart  -->
-            <div class="cart col-span-1 bg-white p-2">
+            <div class="cart col-span-1 bg-white shadow-sm rounded-md p-2">
                 <h2 class="font-bold text-sm">Your Cart</h2>
                 <div class="item_holder flex flex-col">
                     <div class="item flex justify-between p-2 bg-[#F0FDF4] rounded-md my-2">
