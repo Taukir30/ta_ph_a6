@@ -43,6 +43,7 @@ const showAllPlants = (plants) => {
 
         cardHolder.append(card);
     }
+    showSpinner(false);
 }
 
 // loding categories api data(3)
@@ -67,7 +68,9 @@ const showCategories = (categories) => {
 
 // loading plants by category api (5)
 const loadPlants = (id) => {
-        console.log(id)
+        // console.log(id)
+    showSpinner(true);
+
     fetch(`https://openapi.programming-hero.com/api/category/${id}`)
         .then( res => res.json() )
         .then( json => showAllPlants(json.plants) )                 //calling show plant function(2) with new plant data by category
@@ -178,6 +181,18 @@ function del(id){
 
     cart.splice(index,1);
     showCart();
+}
+
+//spinner functionality
+const showSpinner = status => {
+
+    if(status == true){
+        document.getElementById('spinner').classList.remove('hidden');
+        document.getElementById('card_holder').classList.add('hidden');
+    }else{
+        document.getElementById('spinner').classList.add('hidden');
+        document.getElementById('card_holder').classList.remove('hidden');
+    }
 }
 
 
